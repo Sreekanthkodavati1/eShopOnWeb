@@ -8,12 +8,12 @@ pipeline {
     }
     stage('build') {
       steps {
-        bat 'dotnet build eShopOnWeb.sln'
+        sh 'dotnet build eShopOnWeb.sln'
       }
     }
     stage('test') {
       steps {
-        bat 'dotnet test eShopOnWeb.sln'
+        sh 'dotnet test eShopOnWeb.sln'
       }
     }
   }
