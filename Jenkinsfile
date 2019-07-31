@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git(url: 'https://github.com/viswanathch999/sample-java-web.git', branch: 'master', credentialsId: 'viswanathch999')
+        git(url: 'https://github.com/Sreekanthkodavati1/eShopOnWeb.git', branch: 'master', credentialsId: 'Sreekanthkodavati1')
       }
     }
     /*stage('Initialize') {
