@@ -19,6 +19,8 @@ pipeline {
             echo 'Tests'
           }
         }
+      }
+ }
         /*stage('Junit') {
           steps {
             echo 'junit tests'
@@ -51,4 +53,6 @@ pipeline {
       }
     }
   }
+}
+  
 
