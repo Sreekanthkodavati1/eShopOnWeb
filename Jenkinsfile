@@ -19,15 +19,16 @@ pipeline {
             echo 'Tests'
           }
         }
-      }
- }
-        /*stage('Junit') {
+    
+        stage('junit') {
           steps {
             echo 'junit tests'
-            sh 'mvn test -B -Dmaven.javadoc.skip=true -Dcheckstyle.skip=true'
+            //sh 'mvn test -B -Dmaven.javadoc.skip=true -Dcheckstyle.skip=true'
           }
-        }*/
-        stage('code coverage') {
+        }
+       }
+      }
+        stage('SonarQube') {
           steps {
             echo 'code coverage test cases'
           }
