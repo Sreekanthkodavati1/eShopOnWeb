@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('checkout') {
       steps {
-        git(url: 'https://github.com/Ajayvarma8142/eShopOnWeb.git', branch: 'master')
+        git(url: 'https://github.com/Sreekanthkodavati1/eShopOnWeb.git', branch: 'master')
       }
     }
     stage('build') {
